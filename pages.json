@@ -1,0 +1,43 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页
+		{
+			"path": "pages/detail/detail", // 方案一的页面
+			"style": {
+				"navigationBarTitleText": "智能新风系统 - 主控"
+			}
+		},
+		{
+			"path": "pages/summary/summary", // 新的数据汇总页面
+			"style": {
+				"navigationBarTitleText": "数据汇总"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "智能新风系统",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#007AFF",
+		"borderStyle": "black",
+		"backgroundColor": "#FFFFFF",
+		"list": [
+			{
+				"pagePath": "pages/detail/detail",
+				"iconPath": "static/tab_control.png", // 您需要准备一张图标
+				"selectedIconPath": "static/tab_control_active.png", // 准备一张高亮图标
+				"text": "智能控制"
+			},
+			{
+				"pagePath": "pages/summary/summary",
+				"iconPath": "static/tab_summary.png", // 您需要准备一张图标
+				"selectedIconPath": "static/tab_summary_active.png", // 准备一张高亮图标
+				"text": "数据汇总"
+			}
+		]
+	}
+}
